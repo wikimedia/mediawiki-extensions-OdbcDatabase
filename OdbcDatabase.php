@@ -1,5 +1,4 @@
 <?php
-
 /**
  * OdbcDatabase extension
  *
@@ -12,9 +11,10 @@ $wgExtensionCredits['other'][] = array(
 	'author' => 'Roger Cass',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:OdbcDatabase',
 	'descriptionmsg' => 'odbcdatabase-desc',
-	'version' => '1.0 alpha 1',
+	'version' => '1.1.0 alpha 1',
 );
 
+$wgMessagesDirs['OdbcDatabase'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['OdbcDatabase'] = __DIR__ . '/OdbcDatabase.i18n.php';
 $wgExtensionAliasesFiles['OdbcDatabase'] = __DIR__ . '/OdbcDatabase.aliases.php';
 $wgAutoloadClasses['DatabaseOdbc']
