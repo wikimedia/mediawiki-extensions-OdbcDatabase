@@ -5,9 +5,11 @@
  * @file
  * @ingroup Extensions
  */
-$aliases = array();
+
+$specialPageAliases = array();
+
 /** English */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'OdbcDatabase' => array( 'OdbcDatabase' )
 );
 
