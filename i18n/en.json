@@ -9,8 +9,8 @@
     "odbcdatabase-odbc-missing": "ODBC functions missing. Ensure PHP:ODBC is installed.",
     "odbcdatabase-connection-error": "Error connecting to server [{{1}}]: {{2}}",
     "odbcdatabase-free-error": "Unable to free ODBC result",
-    "odbcdatacase-fetch-object-error": "Error while fetching object: [{{1}}] {{2}}",
-    "odbcdatacase-fetch-row-error": "Error while fetching row: [{{1}}] {{2}}",
+    "odbcdatabase-fetch-object-error": "Error while fetching object: [{{1}}] {{2}}",
+    "odbcdatabase-fetch-row-error": "Error while fetching row: [{{1}}] {{2}}",
     "odbcdatabase-insert-id-unsupported": "Function insertId() is unsupported.",
     "odbcdatabase-unknown-server-version": "Unknown ODBC server version."
 }

@@ -8,8 +8,8 @@
     "odbcdatabase-odbc-missing": "The ODBC functions are not available in this PHP installation.",
     "odbcdatabase-connection-error": "There was an error connecting to the database server. {{1}} is the name of the server. {{2}} is the text of any error we could recover.",
     "odbcdatabase-free-error": "There was an error freeing an ODBC result.",
-    "odbcdatacase-fetch-object-error": "There was an error while fetching an object using odbc_fetch_object. {{1}} is the error number from odbc_error. {{2}} is the error text.",
-    "odbcdatacase-fetch-row-error": "There was an error while fetching a row using odbc_fetch_row. {{1}} is the error number from odbc_error. {{2}} is the error text.",
+    "odbcdatabase-fetch-object-error": "There was an error while fetching an object using odbc_fetch_object. {{1}} is the error number from odbc_error. {{2}} is the error text.",
+    "odbcdatabase-fetch-row-error": "There was an error while fetching a row using odbc_fetch_row. {{1}} is the error number from odbc_error. {{2}} is the error text.",
     "odbcdatabase-insert-id-unsupported": "Report that this function is not supported.",
     "odbcdatabase-unknown-server-version": "The ODBC server version is not known. A default version message."
 }
