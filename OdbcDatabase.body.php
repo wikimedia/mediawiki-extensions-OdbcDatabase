@@ -179,7 +179,7 @@ class DatabaseOdbc extends DatabaseBase {
 	 * @return int
 	 */
 	function insertId() {
-		throw new DBUnexpectedError( $this, wfMessage( 'odbcdatabase-inert-id-unsupported' ) );
+		throw new DBUnexpectedError( $this, wfMessage( 'odbcdatabase-insert-id-unsupported' ) );
 		return 0;
 	}
 
@@ -298,7 +298,7 @@ class DatabaseOdbc extends DatabaseBase {
 	 * @return string
 	 */
 	function getServerVersion() {
-		$ver = wfMessage( 'odbddatabase-unknown-server-version' );
+		$ver = wfMessage( 'odbcdatabase-unknown-server-version' );
 		$result = odbc_data_source( $this->mConn, SQL_FETCH_FIRST );
 		while($result)
 		{
