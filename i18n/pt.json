@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente"
+		]
+	},
+	"odbcdatabase-insert-id-unsupported": "Função insertId() não suportada."
+}
