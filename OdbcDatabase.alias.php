@@ -18,3 +18,8 @@ $specialPageAliases['en'] = array(
 $specialPageAliases['de'] = array(
 	'OdbcDatabase' => array( 'ODBC-Datenbank' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'OdbcDatabase' => array( 'Odbc数据库' ),
+);
