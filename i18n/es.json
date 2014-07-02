@@ -4,5 +4,6 @@
 			"Fitoschido"
 		]
 	},
-	"odbcdatabase": "OdbcDatabase"
+	"odbcdatabase": "OdbcDatabase",
+	"odbcdatabase-connection-error": "Error al conectar con el servidor [{{1}}]: {{2}}"
 }
