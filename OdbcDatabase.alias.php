@@ -28,3 +28,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'OdbcDatabase' => array( 'Odbc数据库' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'OdbcDatabase' => array( 'Odbc資料庫' ),
+);
