@@ -14,6 +14,11 @@ $specialPageAliases['en'] = array(
 	'OdbcDatabase' => array( 'OdbcDatabase' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'OdbcDatabase' => array( 'قاعدة_بيانات_أو_دي_بي_سي' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'OdbcDatabase' => array( 'ODBC-Datenbank' ),
