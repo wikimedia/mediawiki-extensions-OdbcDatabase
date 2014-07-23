@@ -19,6 +19,11 @@ $specialPageAliases['ar'] = array(
 	'OdbcDatabase' => array( 'قاعدة_بيانات_أو_دي_بي_سي' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'OdbcDatabase' => array( 'قاعده_بيانات_او_دى_بى_سى' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'OdbcDatabase' => array( 'ODBC-Datenbank' ),
