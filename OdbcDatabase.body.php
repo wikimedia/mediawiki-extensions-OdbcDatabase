@@ -8,8 +8,8 @@
  */
 class DatabaseOdbc extends DatabaseBase {
 
-	var $mAffectedRows = 0;
-	var $mRowNum = 0;
+	public $mAffectedRows = 0;
+	public $mRowNum = 0;
 
 	/**
 	 * @return string
