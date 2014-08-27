@@ -5,7 +5,7 @@
 		]
 	},
 	"odbcdatabase": "ODBC数据库",
-	"odbcdatabase-desc": "使用PHP命令库<code>odbc_*</code>的驱动程序以支持外部数据拓展",
+	"odbcdatabase-desc": "使用PHP命令库<code>odbc_*</code>的驱动程序以支持外部数据扩展",
 	"odbcdatabase-odbc-missing": "缺少ODBC函数。确保<code>PHP:ODBC</code>已安装。",
 	"odbcdatabase-connection-error": "连接服务器[{{1}}]时出错：{{2}}",
 	"odbcdatabase-free-error": "无法释放ODBC结果",
