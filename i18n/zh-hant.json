@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"odbcdatabase-connection-error": "連結至伺服器 [{{1}}] 時出錯：{{2}}",
+	"odbcdatabase-insert-id-unsupported": "函數 insertId() 不受支援。"
+}
