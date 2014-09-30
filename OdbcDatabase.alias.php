@@ -29,6 +29,11 @@ $specialPageAliases['de'] = array(
 	'OdbcDatabase' => array( 'ODBC-Datenbank' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'OdbcDatabase' => array( 'پایگاه_داده‌های_Odbc' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'OdbcDatabase' => array( 'Odbc데이터베이스' ),
