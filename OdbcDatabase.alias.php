@@ -44,6 +44,11 @@ $specialPageAliases['mk'] = array(
 	'OdbcDatabase' => array( 'БазаOdbc' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'OdbcDatabase' => array( 'CSDL_ODBC', 'Cơ_sở_dữ_liệu_ODBC' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'OdbcDatabase' => array( 'Odbc数据库' ),
