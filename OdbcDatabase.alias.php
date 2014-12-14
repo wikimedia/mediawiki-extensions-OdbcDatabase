@@ -56,5 +56,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'OdbcDatabase' => array( 'Odbc 資料庫' ),
+	'OdbcDatabase' => array( 'Odbc_資料庫' ),
 );
