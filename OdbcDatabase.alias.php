@@ -39,6 +39,11 @@ $specialPageAliases['ko'] = array(
 	'OdbcDatabase' => array( 'Odbc데이터베이스' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'OdbcDatabase' => array( 'ODBC-Datebank' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'OdbcDatabase' => array( 'БазаOdbc' ),
