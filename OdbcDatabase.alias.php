@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'OdbcDatabase' => array( 'قاعده_بيانات_او_دى_بى_سى' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'OdbcDatabase' => array( 'مالوماتین_بانک' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'OdbcDatabase' => array( 'ODBC-Datenbank' ),
