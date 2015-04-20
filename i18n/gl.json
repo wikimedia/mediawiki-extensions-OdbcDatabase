@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo"
+		]
+	},
+	"odbcdatabase-connection-error": "Erro conectando ao servidor [{{1}}]: {{2}}",
+	"odbcdatabase-unknown-server-version": "Versión descoñecida do servidor ODBC."
+}
