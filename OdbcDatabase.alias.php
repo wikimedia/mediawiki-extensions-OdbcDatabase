@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'OdbcDatabase' => array( 'قاعدة_بيانات_أو_دي_بي_سي' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'OdbcDatabase' => array( 'قاعده_بيانات_او_دى_بى_سى' ),
 );
