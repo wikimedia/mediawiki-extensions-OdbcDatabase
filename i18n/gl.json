@@ -6,6 +6,7 @@
 		]
 	},
 	"odbcdatabase": "Base de datos Odbc",
+	"odbcdatabase-desc": "Controlador que usa a biblioteca de comandos PHP <code>odbc_*</code> para soportar a extensión de datos externos",
 	"odbcdatabase-odbc-missing": "Faltan funcións ODBC. Asegúrese que <code>PHP:ODBC</code> está instalado.",
 	"odbcdatabase-connection-error": "Erro conectando ao servidor [{{1}}]: {{2}}",
 	"odbcdatabase-free-error": "Imposible liberar o resultado ODBC",
