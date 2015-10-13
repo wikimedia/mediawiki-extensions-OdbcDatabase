@@ -6,6 +6,7 @@
 			"Umherirrender"
 		]
 	},
+	"odbcdatabase": "Used as title on [[Special:OdbcDatabase]]",
 	"odbcdatabase-desc": "{{desc|name=Odbc Database|url=https://www.mediawiki.org/wiki/Extension:OdbcDatabase}}",
 	"odbcdatabase-odbc-missing": "The ODBC functions are not available in this PHP installation.",
 	"odbcdatabase-connection-error": "There was an error connecting to the database server. Parameters:\n* <nowiki>{{1}}</nowiki> - the name of the server\n* <nowiki>{{2}}</nowiki> - the text of any error we could recover",
