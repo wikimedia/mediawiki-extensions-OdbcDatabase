@@ -9,7 +9,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'OdbcDatabase',
 	'author' => 'Roger Cass',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:OdbcDatabase',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:OdbcDatabase',
 	'descriptionmsg' => 'odbcdatabase-desc',
 	'version' => '1.2.0 alpha 2',
 );
