@@ -6,7 +6,7 @@
 		]
 	},
 	"odbcdatabase": "Base de données Odbc",
-	"odbcdatabase-desc": "Pilote qui utilise la bibliothèque de commandes PHP <code>odbc_*</code> pour offrir le support de l’extension de données externes",
+	"odbcdatabase-desc": "Pilote qui utilise la bibliothèque de commandes PHP <code>odbc_*</code> pour offrir la prise en charge de l’extension de données externes",
 	"odbcdatabase-odbc-missing": "Fonctions ODBC manquantes. Assurez-vous que <code>PHP:ODBC</code> est installé.",
 	"odbcdatabase-connection-error": "Erreur à la connexion au serveur [{{1}}] : {{2}}",
 	"odbcdatabase-free-error": "Impossible de libérer le résultat ODBC",
