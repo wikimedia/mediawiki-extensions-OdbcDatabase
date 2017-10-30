@@ -15,7 +15,6 @@ $wgExtensionCredits['other'][] = array(
 );
 
 $wgMessagesDirs['OdbcDatabase'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['OdbcDatabase'] = __DIR__ . '/OdbcDatabase.i18n.php';
 $wgExtensionMessagesFiles['OdbcDatabaseAlias'] = __DIR__ . '/OdbcDatabase.alias.php';
 $wgAutoloadClasses['DatabaseOdbc']
 	= $wgAutoloadClasses['OdbcField']
