@@ -253,7 +253,7 @@ class DatabaseOdbc extends DatabaseBase {
 	 * @param $fname string
 	 * @return false|array
 	 */
-	function indexInfo( $table, $index, $fname = 'DatabaseMysql::indexInfo' ) {
+	function indexInfo( $table, $index, $fname = __METHOD__ ) {
 		/*
 		 * For now, always return false. Not sure how
 		 * to generically find this info using no
