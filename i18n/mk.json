@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"odbcdatabase": "База Odbc",
@@ -12,5 +13,5 @@
 	"odbcdatabase-fetch-object-error": "Грешка при добивањето на предметот: [{{1}}] {{2}}",
 	"odbcdatabase-fetch-row-error": "Грешка при добивањето на редот: [{{1}}] {{2}}",
 	"odbcdatabase-insert-id-unsupported": "Функцијата insertId() не е поддржана.",
-	"odbcdatabase-unknown-server-version": "Непознта верзија на ODBC-опслужувач."
+	"odbcdatabase-unknown-server-version": "Непозната верзија на ODBC-опслужувач."
 }
