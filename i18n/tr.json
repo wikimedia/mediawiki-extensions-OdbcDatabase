@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"odbcdatabase": "OdbcVeriTabanı",
+	"odbcdatabase-desc": "Harici veri uzantısını desteklemek için PHP <code>odbc_*</code> komut kütüphanesini kullanan sürücü",
+	"odbcdatabase-odbc-missing": "ODBC fonksiyonları eksik. <code>PHP:ODBC</code>'nin kurulu olduğundan emin olun.",
+	"odbcdatabase-connection-error": "[{{1}}] sunucusuna bağlanırken hata oluştu: {{2}}",
+	"odbcdatabase-free-error": "ODBC sonucu serbest bırakılamıyor",
+	"odbcdatabase-fetch-object-error": "Nesne alınırken hata oluştu: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Satır alınırken hata oluştu: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "İşlev insertId() desteklenmiyor.",
+	"odbcdatabase-unknown-server-version": "Bilinmeyen ODBC sunucusu sürümü."
+}
