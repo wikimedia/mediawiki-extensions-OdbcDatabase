@@ -4,18 +4,17 @@
  *
  * @author Roger Cass
  */
-
-$wgExtensionCredits['other'][] = array(
-	'path' => __FILE__,
-	'name' => 'OdbcDatabase',
-	'author' => 'Roger Cass',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:OdbcDatabase',
-	'descriptionmsg' => 'odbcdatabase-desc',
-	'version' => '1.2.0 alpha 2',
-);
-
-$wgMessagesDirs['OdbcDatabase'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['OdbcDatabaseAlias'] = __DIR__ . '/OdbcDatabase.alias.php';
-$wgAutoloadClasses['DatabaseOdbc']
-	= $wgAutoloadClasses['OdbcField']
-	= __DIR__ . '/OdbcDatabase.body.php';
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'OdbcDatabase' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['OdbcDatabase'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['OdbcDatabaseAlias'] = __DIR__ . '/OdbcDatabase.alias.php';
+	wfWarn(
+		'Deprecated PHP entry point used for the OdbcDatabase extension. ' .
+		'Please use wfLoadExtension() instead, ' .
+		'see https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the OdbcDatabase extension requires MediaWiki 1.29+' );
+}
