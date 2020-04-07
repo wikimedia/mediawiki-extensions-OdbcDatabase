@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meshkov.a",
-			"Diralik"
+			"Diralik",
+			"Meshkov.a"
 		]
 	},
 	"odbcdatabase": "OdbcDatabase",
