@@ -19,7 +19,7 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $sql string
+	 * @param string $sql
 	 * @return resource
 	 */
 	protected function doQuery( $sql ) {
@@ -33,10 +33,10 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $server string
-	 * @param $user string
-	 * @param $password string
-	 * @param $dbName string
+	 * @param string $server
+	 * @param string $user
+	 * @param string $password
+	 * @param string $dbName
 	 * @return bool
 	 * @throws DBConnectionError
 	 */
@@ -81,7 +81,7 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $res ResultWrapper
+	 * @param ResultWrapper $res
 	 * @throws DBUnexpectedError
 	 */
 	function freeResult( $res ) {
@@ -98,7 +98,7 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $res ResultWrapper
+	 * @param ResultWrapper $res
 	 * @return object|stdClass
 	 * @throws DBUnexpectedError
 	 */
@@ -109,8 +109,8 @@ class DatabaseOdbc extends DatabaseBase {
 		$row = odbc_fetch_object( $res );
 		if ( $row ) {
 			$this->mRowNum++;
-		} else if ( $this->mRowNum <= $this->mAffectedRows ) {
-			if( $this->lastErrno() ) {
+		} elseif ( $this->mRowNum <= $this->mAffectedRows ) {
+			if ( $this->lastErrno() ) {
 				throw new DBUnexpectedError( $this, wfMessage( 'odbcdatabase-fetch-object-error', $this->lastErrno(), htmlspecialchars( $this->lastError() ) ) );
 			}
 		}
@@ -118,7 +118,7 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $res ResultWrapper
+	 * @param ResultWrapper $res
 	 * @return array
 	 * @throws DBUnexpectedError
 	 */
@@ -133,9 +133,9 @@ class DatabaseOdbc extends DatabaseBase {
 			$this->mRowNum++;
 			$nCols = odbc_num_fields( $res );
 			for ( $i = 0; $i < $nCols; $i++ ) {
-				$array[$i] = odbc_result( $res, $i+1 );
+				$array[$i] = odbc_result( $res, $i + 1 );
 			}
-		} else if ( $this->mRowNum <= $this->mAffectedRows ) {
+		} elseif ( $this->mRowNum <= $this->mAffectedRows ) {
 			if ( $this->lastErrno() ) {
 				throw new DBUnexpectedError( $this, wfMessage( 'odbcdatabase-fetch-row-error', $this->lastErrno(), htmlspecialchars( $this->lastError() ) ) );
 			}
@@ -145,7 +145,7 @@ class DatabaseOdbc extends DatabaseBase {
 
 	/**
 	 * @throws DBUnexpectedError
-	 * @param $res ResultWrapper
+	 * @param ResultWrapper $res
 	 * @return int
 	 */
 	function numRows( $res ) {
@@ -153,7 +153,7 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $res ResultWrapper
+	 * @param ResultWrapper $res
 	 * @return int
 	 */
 	function numFields( $res ) {
@@ -164,8 +164,8 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $res ResultWrapper
-	 * @param $n string
+	 * @param ResultWrapper $res
+	 * @param string $n
 	 * @return string
 	 */
 	function fieldName( $res, $n ) {
@@ -180,17 +180,18 @@ class DatabaseOdbc extends DatabaseBase {
 	 */
 	function insertId() {
 		throw new DBUnexpectedError( $this, wfMessage( 'odbcdatabase-insert-id-unsupported' ) );
+		// phpcs:ignore Squiz.PHP.NonExecutableCode.Unreachable
 		return 0;
 	}
 
 	/**
-	 * @param $res ResultWrapper
-	 * @param $row
+	 * @param ResultWrapper $res
 	 * @return bool
 	 */
-	function dataSeek( $res, $row ) {
+	function dataSeek( $res ) {
 		if ( $res instanceof ResultWrapper ) {
 			$res = $res->result;
+			$row = odbc_fetch_row( $res );
 		}
 		return odbc_fetch_row( $res, $row );
 	}
@@ -215,15 +216,15 @@ class DatabaseOdbc extends DatabaseBase {
 		} else {
 			$error = odbc_errormsg();
 		}
-		if( $error ) {
+		if ( $error ) {
 			$error .= ' (' . $this->mServer . ')';
 		}
 		return $error;
 	}
 
 	/**
-	 * @param $table string
-	 * @param $field string
+	 * @param string $table
+	 * @param string $field
 	 * @return bool|MySQLField
 	 */
 	function fieldInfo( $table, $field ) {
@@ -231,13 +232,13 @@ class DatabaseOdbc extends DatabaseBase {
 		$res = $this->query( "SELECT * FROM $table LIMIT 1", __METHOD__, true );
 		if ( !$res ) {
 			return false;
-		} else if ( $res instanceof ResultWrapper ) {
+		} elseif ( $res instanceof ResultWrapper ) {
 			$res = $res->result;
 		}
 		$n = odbc_num_fields( $res );
-		for( $i = 0; $i < $n; $i++ ) {
+		for ( $i = 0; $i < $n; $i++ ) {
 			$name = odbc_field_name( $res, $i );
-			if( $field == $name ) {
+			if ( $field == $name ) {
 				return new OdbcField( $table, $res, $i );
 			}
 		}
@@ -248,9 +249,9 @@ class DatabaseOdbc extends DatabaseBase {
 	 * Get information about an index into an object
 	 * Returns false if the index does not exist
 	 *
-	 * @param $table string
-	 * @param $index string
-	 * @param $fname string
+	 * @param string $table
+	 * @param string $index
+	 * @param string $fname
 	 * @return false|array
 	 */
 	function indexInfo( $table, $index, $fname = __METHOD__ ) {
@@ -270,29 +271,30 @@ class DatabaseOdbc extends DatabaseBase {
 	}
 
 	/**
-	 * @param $s string
+	 * @param string $s
 	 *
 	 * @return string
 	 */
-	function strencode( $s ) { # Should not be called by us
-                return str_replace( "'", "''", $s );
-        }
+	function strencode( $s ) {
+	# Should not be called by us
+		return str_replace( "'", "''", $s );
+	}
 
-        /**
-         * If it's a string, adds quotes and backslashes
-         * Otherwise returns as-is
-         *
-         * @param $s string
-         *
-         * @return string
-         */
-        function addQuotes( $s ) {
-                if ( $s instanceof Blob ) {
-                        return "'" . $s->fetch( $s ) . "'";
-                } else {
-                        return parent::addQuotes( $s );
-                }
-        }
+	/**
+	 * If it's a string, adds quotes and backslashes
+	 * Otherwise returns as-is
+	 *
+	 * @param string $s
+	 *
+	 * @return string
+	 */
+	function addQuotes( $s ) {
+		if ( $s instanceof Blob ) {
+			return "'" . $s->fetch( $s ) . "'";
+		} else {
+			return parent::addQuotes( $s );
+		}
+	}
 
 	/**
 	 * @return string
@@ -300,14 +302,12 @@ class DatabaseOdbc extends DatabaseBase {
 	function getServerVersion() {
 		$ver = wfMessage( 'odbcdatabase-unknown-server-version' );
 		$result = odbc_data_source( $this->mConn, SQL_FETCH_FIRST );
-		while($result)
-		{
-			if (strtolower($this->mServer) == strtolower($result['server'])) {
+		while ( $result ) {
+			if ( strtolower( $this->mServer ) == strtolower( $result['server'] ) ) {
 				$ver = $result['description'];
 				break;
+			} else { $result = odbc_data_source( $this->mConn, SQL_FETCH_NEXT );
 			}
-			else
-				$result = odbc_data_source( $this->mConn, SQL_FETCH_NEXT );
 		}
 		return $ver;
 	}
@@ -322,21 +322,21 @@ class DatabaseOdbc extends DatabaseBase {
 	/**
 	 * End a transaction
 	 *
-	 * @param $fname string
+	 * @param string $fname
 	 */
 	function doCommit( $fname = 'DatabaseBase::commit' ) {
 		if ( $this->mTrxLevel ) {
-			//$this->query( 'COMMIT TRAN', $fname );
+			// $this->query( 'COMMIT TRAN', $fname );
 			$this->mTrxLevel = 0;
 		}
 	}
 
 	/**
 	 * Begin a transaction, committing any previously open transaction
-     * @param $fname string
+	 * @param string $fname
 	 */
 	function doBegin( $fname = 'DatabaseBase::begin' ) {
-		//$this->query( 'BEGIN', $fname );
+		// $this->query( 'BEGIN', $fname );
 		$this->mTrxLevel = 1;
 	}
 }
