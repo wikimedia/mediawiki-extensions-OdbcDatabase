@@ -6,10 +6,15 @@
 class OdbcField implements Field {
 	private $name, $tableName, $type;
 
-	function __construct ( $tableName, $res, $n ) {
+	/**
+	 * @param string $tableName
+	 * @param ResultWrapper $res
+	 * @param string $n
+	 */
+	function __construct( $tableName, $res, $n ) {
 		$this->name = odbc_field_name( $res, $n );
 		$this->tableName = $tableName;
-		$this->type = odbc_field_type( $res, $n);
+		$this->type = odbc_field_type( $res, $n );
 	}
 
 	/**
