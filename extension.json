@@ -17,8 +17,8 @@
 		"OdbcDatabaseAlias": "OdbcDatabase.alias.php"
 	},
 	"AutoloadClasses": {
-		"OdbcField": "OdbcDatabase.body.php",
-		"DatabaseOdbc": "OdbcDatabase.body.php"
+		"OdbcField": "src/OdbcField.php",
+		"DatabaseOdbc": "src/DatabaseOdbc.php"
 	},
 	"manifest_version": 2
 }
