@@ -99,7 +99,7 @@ class DatabaseOdbc extends DatabaseBase {
 
 	/**
 	 * @param ResultWrapper $res
-	 * @return object|stdClass
+	 * @return stdClass|bool
 	 * @throws DBUnexpectedError
 	 */
 	function fetchObject( $res ) {
