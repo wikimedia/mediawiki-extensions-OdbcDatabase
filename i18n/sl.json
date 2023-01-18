@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"odbcdatabase": "Podatkovna zbirka ODBC",
+	"odbcdatabase-desc": "Gonilnik, ki uporablja knjižnico ukazov PHP <code>odbc_*</code> za podporo razširitvi zunanjih podatkov",
+	"odbcdatabase-odbc-missing": "Manjkajo funkcije ODBC. Zagotovite, da je <code>PHP:ODBC</code> nameščen.",
+	"odbcdatabase-connection-error": "Napaka pri povezovanju s strežnikom [{{1}}]: {{2}}",
+	"odbcdatabase-free-error": "Rezultata ODBC ni mogoče sprostiti",
+	"odbcdatabase-fetch-object-error": "Napaka pri pridobivanju objekta: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Napaka pri pridobivanju vrstice: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "Funkcija insertId() ni podprta.",
+	"odbcdatabase-unknown-server-version": "Neznana različica strežnika ODBC."
+}
