@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"odbcdatabase": "מסד נתונים Odbc",
+	"odbcdatabase-desc": "מנהל התקן (דרייבר) שמשתמש בספריית הפקודות <code>odbc_*</code> של PHP כדי לתמוך בהרחבת הנתונים החיצונית",
+	"odbcdatabase-odbc-missing": "פונקציות ODBC חסרות. נא לוודא ש־<code>PHP:ODBC</code> מותקן.",
+	"odbcdatabase-connection-error": "שגיאה בהתחברות לשרת [{{1}}]: {{2}}",
+	"odbcdatabase-free-error": "לא ניתן לשחרר תוצאת ODBC",
+	"odbcdatabase-fetch-object-error": "שגיאה בעת אחזור עצם: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "שגיאה בעת אחזור שורה: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "הפונקציה <code dir=\"ltr\">insertId()</code> אינה נתמכת.",
+	"odbcdatabase-unknown-server-version": "גרסת שרת ODBC לא ידועה."
+}
