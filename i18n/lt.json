@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"odbcdatabase-connection-error": "Klaida jungiantis prie serverio [{{1}}]: {{2}}",
+	"odbcdatabase-fetch-object-error": "Klaida gaunant objektą: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Klaida gaunant eilutę: [{{1}}] {{2}}",
+	"odbcdatabase-unknown-server-version": "Nežinoma ODBC serverio versija."
+}
