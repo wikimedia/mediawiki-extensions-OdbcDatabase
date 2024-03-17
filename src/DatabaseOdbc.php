@@ -306,7 +306,8 @@ class DatabaseOdbc extends DatabaseBase {
 			if ( strtolower( $this->mServer ) == strtolower( $result['server'] ) ) {
 				$ver = $result['description'];
 				break;
-			} else { $result = odbc_data_source( $this->mConn, SQL_FETCH_NEXT );
+			} else {
+				$result = odbc_data_source( $this->mConn, SQL_FETCH_NEXT );
 			}
 		}
 		return $ver;
