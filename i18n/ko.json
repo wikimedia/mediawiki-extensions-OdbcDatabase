@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Revi"
+			"Revi",
+			"Tensama0415"
 		]
 	},
-	"odbcdatabase": "odbc데이터베이스"
+	"odbcdatabase": "odbc데이터베이스",
+	"odbcdatabase-odbc-missing": "ODBC 함수가 누락되었습니다. <code>PHP:ODBC</code>가 설치되어 있는지 확인하세요.",
+	"odbcdatabase-connection-error": "서버 [{{1}}]에 연결하는 도중 오류 발생: {{2}}",
+	"odbcdatabase-fetch-object-error": "객체를 가져오는 중 오류 발생: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "행를 가져오는 중 오류 발생: [{{1}}] {{2}}",
+	"odbcdatabase-unknown-server-version": "알 수 없는 ODBC 서버 버전입니다."
 }
