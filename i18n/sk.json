@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"odbcdatabase": "OdbcDatabase",
+	"odbcdatabase-desc": "Ovládač, ktorý na podporu rozšírenia External Data používa knižnicu príkazov PHP <code>odbc_*</code>",
+	"odbcdatabase-odbc-missing": "Chýbajú funkcie ODBC. Uistite sa, že je nainštalované <code>PHP:ODBC</code>.",
+	"odbcdatabase-connection-error": "Chyba pri pripájaní k serveru [{{1}}]: {{2}}",
+	"odbcdatabase-free-error": "Nepodarilo sa uvoľniť výsledok ODBC",
+	"odbcdatabase-fetch-object-error": "Chyba pri načítavaní objektu: [{{1}}] {{2}}",
+	"odbcdatabase-fetch-row-error": "Chyba pri načítavaní riadka: [{{1}}] {{2}}",
+	"odbcdatabase-insert-id-unsupported": "Funkcia insertId() nie je podporovaná.",
+	"odbcdatabase-unknown-server-version": "Neznáma verzia servera ODBC."
+}
